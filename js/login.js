@@ -7,7 +7,7 @@ form.addEventListener("submit", (action) => {
 });
 
 const login = async (registration, password) => {
-  await fetch("http://localhost:8080/sra-api/login", {
+  await fetch("https://lunch-requirement-system.herokuapp.com/sra-api/login", {
     method: "POST",
 
     body: JSON.stringify({

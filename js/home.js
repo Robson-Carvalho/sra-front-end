@@ -15,7 +15,7 @@ student.course.innerHTML = `<strong>Curso:</strong> ${studentData.course}`;
 student.schoolGrade.innerHTML = `<strong>Série:</strong> ${studentData.schoolGrade}°`;
 
 const requirement = async () => {
-  fetch("http://localhost:8080/sra-api/requirement", {
+  fetch("https://lunch-requirement-system.herokuapp.com/sra-api/requirement", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
