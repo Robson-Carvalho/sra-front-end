@@ -68,9 +68,11 @@ body {
 }
 
 .alert {
+  position: absolute;
+  z-index: 1000;
   width: 85%;
   margin: 0 auto;
-  margin-top: 3.1rem;
+  margin-top: 4rem;
 }
 
 .alert .fade .text {
@@ -83,14 +85,14 @@ body {
   left: 100%;
   top: 60%;
   transform: translate(-65%, -60%);
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 .main {
   width: 100vw;
   height: 80vh;
   padding: 2rem 0;
-  position: absolute;
+  position: fixed;
   top: 28%;
   transform: translateY(-20%);
 }
@@ -135,6 +137,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
+}
+
+.main .sectionStudent .data .name, .main .sectionStudent .data .registration, .main .sectionStudent .data .classroom, .main .sectionStudent .data .course, .main .sectionStudent .data .schoolGrade {
+  font-size: 1.9rem;
 }
 
 .main .sectionRequirement {
