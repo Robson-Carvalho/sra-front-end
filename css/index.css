@@ -92,7 +92,6 @@ body {
 .main {
   position: fixed;
   /* background-color: #093545; */
-  width: 100vw;
   max-height: 85vh;
   z-index: 10;
   left: 50%;
@@ -125,7 +124,7 @@ body {
 
   color: #224957;
 }
-/* 
+
 .main .form {
   margin-top: 3.6rem;
   display: flex;
@@ -152,11 +151,11 @@ body {
   font-size: 1.8rem;
   line-height: 2rem;
   /* identical to box height, or 143% */
-/* 
+
   padding-left: 1.5rem;
 
   color: #ffffff;
-} */
+}
 
 .main .form .groupInput .input::placeholder {
   font-size: 1.8rem;
@@ -193,7 +192,7 @@ body {
 
 .main .form .button:hover {
   filter: brightness(0.8);
-} */
+}
 
 .footer {
   height: 25vh;
