@@ -85,16 +85,15 @@ body {
   left: 100%;
   top: 60%;
   transform: translate(-65%, -60%);
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 .main {
-  /* position: fixed;
+  position: fixed;
   z-index: 1000;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%); */
-  margin-top: 10rem;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -188,6 +187,12 @@ body {
 
 .main .form .button:hover {
   filter: brightness(0.8);
+}
+
+
+.footer{
+  position: fixed;
+  bottom: 0%;  
 }
 
 .footer .svg {
