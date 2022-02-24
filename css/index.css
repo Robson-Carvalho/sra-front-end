@@ -191,7 +191,7 @@ body {
 }
 
 .footer .svg {
-  position: absolute;
+  position: fixed;
   width: 100vw;
 }
 
