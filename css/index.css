@@ -78,7 +78,6 @@ body {
 }
 
 .main {
-  background-color: rebeccapurple;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -171,5 +170,64 @@ body {
 
 .footer {
   height: 9.36rem;
-  background-color: red;
+}
+
+.footer .svg {
+  position: absolute;
+  width: 100vw;
+}
+
+.footer .primary {
+  left: 0%;
+  bottom: -8%;
+  transform: translate(-0%, -4%);
+}
+
+.footer .secondary {
+  left: 0%;
+  bottom: -8%;
+  transform: translate(-0%, -0%);
+}
+
+/* Responsividade */
+@media (max-width: 390px) {
+  .footer .primary {
+    bottom: 0%;
+    transform: translate(-0%, 0%);
+  }
+  .footer .secondary {
+    bottom: 0%;
+    transform: translate(-0%, 0%);
+  }
+}
+
+@media (max-width: 414px) {
+  .footer .primary {
+    bottom: 0%;
+    transform: translate(-0%, 0%);
+  }
+  .footer .secondary {
+    bottom: 0%;
+    transform: translate(-0%, 0%);
+  }
+  .alert {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer .primary {
+    bottom: 0%;
+    transform: translate(-0%, -0%);
+  }
+  .footer .secondary {
+    bottom: 0%;
+    transform: translate(-0%, 0%);
+  }
+}
+
+@media (min-width: 1000px) {
+  .alert {
+    width: 60%;
+  }
 }
