@@ -23,29 +23,28 @@ body {
 }
 
 .header {
-  min-height: 10vh;
   background-color: #093545;
   -webkit-box-shadow: 0px 1px 5px 0px #093545;
   -moz-box-shadow: 0px 1px 5px 0px #093545;
   box-shadow: 0px 1px 5px 0px #093545;
+  min-height: 9.36rem;
+}
+
+.header .nav {
+  margin: 0 auto;
+  height: 100%;
+  padding: 0rem 2rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header .nav .logo {
   width: 4.6625rem;
   height: 6.16725rem;
   margin-bottom: 0.9rem;
-}
-
-.header .nav {
-  max-width: 100rem;
-  height: 100%;
-  margin: 0 auto;
-  padding: 0 2rem;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .header .nav .menu {
@@ -79,7 +78,7 @@ body {
 }
 
 .main {
-  min-height: 80vh;
+  background-color: rebeccapurple;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -171,5 +170,6 @@ body {
 }
 
 .footer {
-  min-height: 10vh;
+  height: 9.36rem;
+  background-color: red;
 }
