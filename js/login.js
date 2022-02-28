@@ -2,7 +2,6 @@ const form = document.forms.login;
 
 form.addEventListener("submit", (action) => {
   action.preventDefault();
-  const [registration, password] = form;
   login(registration.value, password.value);
 });
 
