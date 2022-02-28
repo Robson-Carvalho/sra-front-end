@@ -20,6 +20,8 @@ body {
 header {
   width: 100vw;
   min-height: 8vh;
+  position: fixed;
+  z-index: 100;
   background-color: rgb(9, 53, 69);
   box-shadow: 0 2px 6px -1px rgba(9, 53, 69, 0.65);
 }
