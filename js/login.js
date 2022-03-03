@@ -2,7 +2,8 @@ const form = document.forms.login;
 
 form.addEventListener("submit", (action) => {
   action.preventDefault();
-  login(registration.value, password.value);
+  const [user, password] = form;
+  login(user.value, password.value);
 });
 
 const login = async (registration, password) => {
@@ -28,13 +29,15 @@ const checkoutAuth = async (data) => {
     return addDataLocalStorage(data);
   }
   document.querySelector(".alert").innerHTML = `
-  <div class="alert alert-danger alert-dismissible fade show" role="alert">
-      <strong class="text">${data.message}</strong>
-      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
+      <h3>${data.message}</h3>
+      <button onclick="closeAlert()" class="btn-close">x</button>
   `;
   form.reset();
   form.registration.focus();
+};
+
+const closeAlert = () => {
+  document.querySelector(".alert").innerHTML = ``;
 };
 
 const addDataLocalStorage = ({ data }) => {
